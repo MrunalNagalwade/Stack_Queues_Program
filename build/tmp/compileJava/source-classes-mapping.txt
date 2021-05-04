@@ -1,8 +1,8 @@
-stack/LinkedListNew.java
- stack.LinkedListNew
 stack/INode.java
  stack.INode
-stack/Stack.java
- stack.Stack
+stack/LinkedListNew.java
+ stack.LinkedListNew
 stack/Node.java
  stack.Node
+stack/Stack.java
+ stack.Stack

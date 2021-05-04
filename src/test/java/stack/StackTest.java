@@ -16,5 +16,18 @@ public class StackTest {
         stack.printStack();
         Assertions.assertEquals(thirdNode, peak);
     }
+    @Test
+    public void given3Numbers_WhenPop_ShouldHaveLastAddedNode() {
+        Stack stack = new Stack();
+        Node<Integer> firstNode = new Node<>(70);
+        Node<Integer> secondNode = new Node<>(30);
+        Node<Integer> thirdNode = new Node<>(56);
+        stack.push(firstNode);
+        stack.push(secondNode);
+        stack.push(thirdNode);
+        INode pop = stack.pop();
+        stack.printStack();
+        Assertions.assertEquals(thirdNode, pop);
+    }
 
 }

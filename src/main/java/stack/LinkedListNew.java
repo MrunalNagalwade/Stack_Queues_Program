@@ -45,12 +45,6 @@ public class LinkedListNew {
         node.setNext(newNode);
         newNode.setNext(tempNode);
     }
-    public INode pop()
-    {
-        INode tempNode = this.head;
-        this.head = head.getNext();
-        return tempNode;
-    }
     public INode popLast() {
         INode tempNode = head;
         while (!tempNode.getNext().equals(tail)){
@@ -110,6 +104,12 @@ public class LinkedListNew {
         }
         nodes.append(tempNode.getKey());
         System.out.println(nodes);
+    }
+    public INode pop()
+    {
+        INode tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
     }
 
 }

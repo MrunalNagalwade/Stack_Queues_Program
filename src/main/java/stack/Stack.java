@@ -18,4 +18,8 @@ class Stack {
     public INode peak() {
         return linkedListNew.head;
     }
+    public INode pop()
+    {
+        return linkedListNew.pop();
+    }
 }
